@@ -1,0 +1,481 @@
+$screen-xs: 767px;
+$primary: #0b5ed7;
+body {
+  @media screen and (max-width: $screen-xs) {
+    padding-top: 59px;
+  }
+}
+#menu-btn {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  #navbar-wrapper {
+    position: fixed;
+    left: 0;
+    top: 50px;
+    background: #f6fafd;
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    z-index: 111;
+    display: none;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 0 !important;
+    left: 0;
+    z-index: 111;
+    background: #f6fafd;
+    nav {
+      padding-left: 20px !important;
+    }
+    .css-1y0bycm {
+      margin: 0;
+    }
+  }
+  #navbar-wrapper.active {
+    display: block;
+  }
+  #navbar-wrapper .css-1bcth50 {
+    display: block;
+  }
+  #navbar-wrapper .css-1bcth50 .chakra-button__group {
+    display: block;
+    text-align: center;
+    padding: 35px 0 0;
+  }
+  #navbar-wrapper a {
+    display: block;
+    margin: 0 auto 20px !IMPORTANT;
+    font-size: 20px;
+    text-align: center;
+    button {
+      font-size: inherit;
+    }
+  }
+  #navbar-wrapper .css-1bcth50 .chakra-stack {
+    display: block;
+    text-align: center;
+  }
+  #navbar-wrapper .css-1bcth50 .chakra-stack a button:last-of-type {
+    background: transparent;
+    color: #718096 !IMPORTANT;
+  }
+  #menu-btn {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    height: 24px;
+    width: 24px;
+    background: url(assets/images/001-menu.svg) no-repeat;
+    background-size: 100%;
+    z-index: 9999;
+  }
+  #menu-btn.active {
+    background: url("assets/images/002-cancel.svg") no-repeat;
+    background-size: 100%;
+    z-index: 99999;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    height: 20px;
+    width: 20px;
+  }
+  .login-form-wrapper {
+    max-width: calc(100% - 15px);
+    margin: auto;
+    padding: 6px 0 25px;
+    > a {
+      display: block;
+    }
+  }
+  .login-wrapper .login-form {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .login-wrapper {
+    background: #f6fafd;
+    height: 100vh;
+  }
+  .login-form-wrapper form {
+    margin: auto !important;
+  }
+  .login-wrapper .login-form {
+    margin-top: 90px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .login-wrapper {
+    background: #f6fafd;
+    height: 100vh;
+    padding: 0 2rem !important;
+  }
+  .login-form-wrapper form {
+    margin: auto !important;
+  }
+  .login-wrapper .login-form {
+    margin-top: 90px;
+    margin-bottom: 50px;
+  }
+}
+.sign-btn {
+  color: #718096 !IMPORTANT;
+  &:hover {
+    color: #718096 !IMPORTANT;
+    text-decoration: underline;
+    background: none !important;
+  }
+}
+.sign-up {
+  text-decoration: none !important;
+  button {
+    &:hover {
+      background: #0b5ed7 !important;
+      color: #fff !important;
+      text-decoration: none !important;
+      border-color: #0b5ed7 !important;
+    }
+  }
+}
+header {
+  .logo-link {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  h2 {
+    padding-top: 3px;
+    @media screen and (max-width: $screen-xs) {
+      position: relative;
+      top: 4px;
+    }
+  }
+}
+footer {
+  &.chakra-container {
+    max-width: 1000px !important;
+  }
+}
+.form-control {
+  height: 55px;
+  box-shadow: none;
+  border-radius: 0;
+  &::-webkit-input-placeholder {
+    color: #ced4da;
+  }
+  &:-moz-placeholder {
+    /* Firefox 18- */
+    color: #ced4da;
+  }
+  &::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #ced4da;
+  }
+  &:-ms-input-placeholder {
+    color: #ced4da;
+  }
+  padding-left: 15px;
+  color: #1a202c;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 53px;
+  letter-spacing: -0.18px;
+  &:focus, &:active, &:hover {
+    color: #1a202c;
+    outline: none;
+    box-shadow: none;
+  }
+}
+#main-content {
+  min-height: calc(100vh - 231px);
+  align-items: initial;
+  @media screen and (max-width: $screen-xs) {
+    min-height: calc(100vh - 361px);
+  }
+  @media screen and (max-width: 1500px) {
+    > div {
+      width: calc(100% - 30px) !important;
+    }
+  }
+  .login-form {
+    margin-top: -24px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+      margin-top: 0;
+    }
+    @media screen and (max-width: $screen-xs) {
+      margin-top: 40px;
+    }
+    #auth {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      max-height: calc(100vh - 303px);
+      @media screen and (max-width: $screen-xs) {
+        display: none !important;
+      }
+    }
+  }
+}
+.left-sidebar {
+  flex-direction: column !important;
+  border: 0 !important;
+  margin-top: 50px;
+  min-height: calc(100vh - 90px);
+  // justify-content: center !important;
+  padding-bottom: 100px;
+  position: relative;
+  @media screen and (max-width: $screen-xs) {
+    margin-bottom: 30px;
+    min-height: 0;
+    padding-bottom: 20px;
+  }
+  button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    border: 0 !important;
+    padding: 15px 15px 15px 0 !important;
+    background: transparent !important;
+    color: #718096 !important;
+    margin-bottom: 2px;
+    @media screen and (max-width: $screen-xs) {
+      padding: 15px 15px 15px 15px !important;
+    }
+    &:last-of-type {
+      position: absolute;
+      bottom: 30px;
+      @media screen and (max-width: $screen-xs) {
+        position: relative;
+      }
+    }
+    svg {
+      display: inline-block;
+      height: 26px;
+      width: 26px;
+      stroke: #718096;
+      margin-right: 15px;
+      position: relative;
+      top: -2px;
+    }
+    &[aria-selected="true"] {
+      color: $primary !important;
+      svg {
+        stroke: $primary;
+      }
+    }
+  }
+  .sign-btn {
+    &:hover {
+      text-decoration: none !important;
+    }
+  }
+}
+.sidebar-title {
+  color: $primary;
+  margin-top: 25px;
+  @media screen and (max-width: $screen-xs) {
+    margin-top: 40px;
+  }
+}
+.login-wrapper {
+  #main-content {
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+      min-height: calc(100vh - 360px);
+    }
+    .css-u8xh54 {
+      @media screen and (max-width: 1199px) and (min-width: 992px) {
+        width: 90%;
+      }
+      @media screen and (max-width: 991px) and (min-width: 768px) {
+        width: 100%;
+      }
+      @media screen and (max-width: $screen-xs) {
+        width: 90%;
+        margin: 100px 0 0;
+      }
+      .login-form {
+        box-shadow: 0 4px 12px 0 rgb(104 115 125 / 15%);
+        padding: 4rem 4rem;
+        margin-bottom: 2.5rem;
+        max-width: 1200px;
+        margin: auto;
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+          padding: 2rem 2rem !important;
+        }
+        @media screen and (max-width: $screen-xs) {
+          padding: 3rem 0;
+        }
+        .login-form-wrapper {
+          padding: 0 40px 0 0;
+          @media screen and (max-width: 1199px) and (min-width: 992px) {
+            padding: 0;
+          }
+          @media screen and (max-width: 991px) and (min-width: 768px) {
+            padding: 0;
+          }
+          @media screen and (max-width: $screen-xs) {
+            padding: 0;
+          }
+          button[type="submit"] {
+            width: 100%;
+            height: 60px;
+            border-radius: 0;
+            font-weight: 700;
+            letter-spacing: 2px;
+            @media screen and (max-width: 1199px) and (min-width: 992px) {
+              height: 50px;
+            }
+            @media screen and (max-width: 991px) and (min-width: 768px) {
+              height: 50px;
+            }
+            @media screen and (max-width: $screen-xs) {
+              height: 50px;
+            }
+          }
+          > a {
+            display: block;
+            text-align: center;
+          }
+        }
+        #auth {
+          max-height: 360px !important;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+#dashboard-page {
+  margin-top: 25px;
+  min-height: calc(100vh - 40px);
+  #sidebar {
+    width: 242px !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    border-right: 3px solid #eee;
+    padding: 20px;
+    @media screen and (max-width: $screen-xs) {
+      border-left: 0;
+      position: relative;
+      min-height: 0;
+      width: 100% !important;
+      border-right: 0;
+      padding: 0;
+    }
+  }
+  #content {
+    width: calc(100% - 242px) !important;
+    padding-left: 30px;
+    margin-left: 230px;
+    @media screen and (max-width: $screen-xs) {
+      width: 100% !important;
+      margin-left: 0;
+      padding: 0;
+    }
+    .right-content {
+      .chakra-tabs__tab-panels {
+        .chakra-tabs__tab-panel {
+          padding-top: 0;
+          h2 {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+.upload-video {
+  .files-upload-wrapper {
+    width: 100%;
+    display: block;
+  }
+  .upload-icon {
+    margin: 10px 0 0;
+    svg {
+      margin: auto;
+    }
+  }
+  video {
+    width: 100%;
+    height: 300px;
+  }
+}
+.graph-wrapper-mobile {
+  @media screen and (max-width: 1100px) {
+    max-width: 100%;
+    overflow: scroll;
+  }
+}
+.hidden {
+  display: none !important;
+}
+#welcome-dashboard {
+  margin-bottom: 40px;
+  h2 {
+    margin-bottom: 0 !important;
+  }
+  p {
+    margin-bottom: 30px;
+  }
+}
+.card-wrapper {
+  padding: 25px;
+  background: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding-top: 60px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  .title {
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+#cards-wrapper {
+  @media screen and (max-width: 1199px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.google-signin {
+  border-radius: 0;
+  position: relative;
+  font-size: 16px;
+  padding: 17px 15px 17px 50px;
+  border: 1px solid #ced4da;
+  font-weight: bold;
+  &:hover {
+    border: 1px solid #ced4da !important;
+  }
+  .left {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+  }
+  img {
+    width: 20px;
+  }
+}
+#comment-form {
+  margin-bottom: 50px;
+  textarea {
+    min-height: 200px;
+    margin-bottom: 20px;
+  }
+}

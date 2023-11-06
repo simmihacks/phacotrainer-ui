@@ -1,0 +1,26 @@
+$screen-xs: 767px;
+body {
+  @media screen and (max-width: $screen-xs) {
+    padding-top: 0 !important;
+  }
+}
+
+.user-dropdown-wrapper {
+  position: absolute;
+  right: 25px;
+  top: 35px;
+  width: 100%;
+  text-align: right;
+  > button {
+    margin-left: 20px;
+  }
+}
+.notifications-list {
+  max-height: 300px;
+  overflow: auto;
+  button {
+    .chakra-menu__icon-wrapper{
+      font-size: 20px;
+    }
+  }
+}
