@@ -4,6 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The project URL can be found at: [https://phacotrainer.com/](https://phacotrainer.com/) 
 
+## App Run
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
