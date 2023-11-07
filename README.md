@@ -6,6 +6,7 @@ The project URL can be found at: [https://phacotrainer.com/](https://phacotraine
 
 ## App Run
 
+![](public/phacotrainer-ui-screenshot.png)
 
 
 ## Available Scripts
