@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+The project URL can be found at: [https://phacotrainer.com/](https://phacotrainer.com/) 
+
 ## Available Scripts
 
 In the project directory, you can run:
